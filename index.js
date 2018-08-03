@@ -2,8 +2,8 @@ var sorter = require('./sorter');
 
 var input = process.argv.slice(2);
 
-function createList(list) {
-  list.forEach(function(item) {
+function createList(numArray) {
+  numArray.forEach(function(item) {
     sorter.addToList(Number(item));
   });
   return sorter.sortList();
